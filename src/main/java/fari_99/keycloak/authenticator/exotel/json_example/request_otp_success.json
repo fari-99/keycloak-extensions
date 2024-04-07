@@ -1,0 +1,21 @@
+{
+	"request_id": "87fd98cc59d3465f9c02637634fac590",
+	"method": "POST",
+	"http_code": 200,
+	"response": {
+		"code": 200,
+		"error_data": null,
+		"status": "success",
+		"data": {
+			"verification_id": "ce029ae72f1352b0f45aaac32f41182c",
+			"phone_number": "+6281310862863",
+			"application_id": "fari_99_APPLICATION_ID",
+			"account_sid": "fari_99",
+			"max_attempts": 10,
+			"expiration_in_seconds": 300,
+			"url": "/v2/accounts/fari_99/verifications/sms/ce029ae72f1352b0f45aaac32f41182c",
+			"created_at": "2024-02-12T14:57:22+05:30",
+			"updated_at": "2024-02-12T14:57:22+05:30"
+		}
+	}
+}

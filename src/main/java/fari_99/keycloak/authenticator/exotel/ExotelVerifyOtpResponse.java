@@ -1,0 +1,119 @@
+package fari_99.keycloak.authenticator.exotel;
+
+import com.google.gson.annotations.SerializedName;
+
+public class ExotelVerifyOtpResponse {
+
+    @SerializedName("request_id")
+    private String requestID;
+
+    @SerializedName("method")
+    private String method;
+
+    @SerializedName("http_code")
+    private long httpCode;
+
+    @SerializedName("response")
+    private Response response;
+
+    public String getRequestID() { return requestID; }
+    public void setRequestID(String value) { this.requestID = value; }
+
+    public String getMethod() { return method; }
+    public void setMethod(String value) { this.method = value; }
+
+    public long getHTTPCode() { return httpCode; }
+    public void setHTTPCode(long value) { this.httpCode = value; }
+
+    public Response getResponse() { return response; }
+    public void setResponse(Response value) { this.response = value; }
+
+    public class Response {
+
+        @SerializedName("code")
+        private long code;
+
+        @SerializedName("error_data")
+        private ErrorData errorData;
+
+        @SerializedName("status")
+        private String status;
+
+        @SerializedName("data")
+        private Data data;
+    
+        public long getCode() { return code; }
+        public void setCode(long value) { this.code = value; }
+    
+        public ErrorData getErrorData() { return errorData; }
+        public void setErrorData(ErrorData value) { this.errorData = value; }
+    
+        public String getStatus() { return status; }
+        public void setStatus(String value) { this.status = value; }
+    
+        public Data getData() { return data; }
+        public void setData(Data value) { this.data = value; }
+    }
+
+    public class Data {
+
+        @SerializedName("verification_id")
+        private String verificationID;
+
+        @SerializedName("application_id")
+        private String applicationID;
+
+        @SerializedName("account_sid")
+        private String accountSid;
+
+        @SerializedName("status")
+        private String status;
+
+        @SerializedName("created_at")
+        private String createdAt;
+
+        @SerializedName("updated_at")
+        private String updatedAt;
+    
+        public String getVerificationID() { return verificationID; }
+        public void setVerificationID(String value) { this.verificationID = value; }
+    
+        public String getApplicationID() { return applicationID; }
+        public void setApplicationID(String value) { this.applicationID = value; }
+    
+        public String getAccountSid() { return accountSid; }
+        public void setAccountSid(String value) { this.accountSid = value; }
+    
+        public String getStatus() { return status; }
+        public void setStatus(String value) { this.status = value; }
+    
+        public String getCreatedAt() { return createdAt; }
+        public void setCreatedAt(String value) { this.createdAt = value; }
+    
+        public String getUpdatedAt() { return updatedAt; }
+        public void setUpdatedAt(String value) { this.updatedAt = value; }
+    }
+
+    public class ErrorData {
+
+        @SerializedName("code")
+        private long code;
+
+        @SerializedName("description")
+        private String description;
+
+        @SerializedName("message")
+        private String message;
+    
+        public long getCode() { return code; }
+        public void setCode(long value) { this.code = value; }
+    
+        public String getDescription() { return description; }
+        public void setDescription(String value) { this.description = value; }
+    
+        public String getMessage() { return message; }
+        public void setMessage(String value) { this.message = value; }
+    }
+}
+
+

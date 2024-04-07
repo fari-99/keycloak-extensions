@@ -1,0 +1,15 @@
+{
+	"request_id": "34f1bed8b4f246049e894d44d588d911",
+	"method": "POST",
+	"http_code": 403,
+	"response": {
+		"code": 403,
+		"error_data": {
+			"code": 1003,
+			"description": "VerificationId already verified.",
+			"message": "Authentication failed"
+		},
+		"status": "failure",
+		"data": null
+	}
+}
