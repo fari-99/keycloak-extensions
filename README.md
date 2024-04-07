@@ -6,6 +6,8 @@ the collection as follow:
 ## Authenticator Flow
 - SMS 2FA (Using [Exotel](https://exotel.com/id-en/))
 - Captcha on Username Password Form
+- Secondary Email 2FA
+- Secondary Email Login Form
 
 ## Password Hash
 - Bcrypt (hard coded default rounding is 10)
